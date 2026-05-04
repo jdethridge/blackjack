@@ -37,7 +37,7 @@ int main(){
         char answer;
         printf("\nHit or stay? (h / s): ");
         scanf(" %c", &answer);
-        if(answer == 's') break;
+        if(answer == 's' || answer == 'l') break;
 
         playerCards = dealCard(playerCards, &playerCurrentCard);
         playerTotal = totaling(playerCards, &playerCurrentCard, &playerTotal);
